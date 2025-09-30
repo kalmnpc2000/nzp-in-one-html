@@ -36,4 +36,4 @@ Contributions, bug reports, and community feedback are always welcome. (anything
 ---
 
 ## License
-This project is licensed under the [GPL-2.0 License](https://opensource.org/licenses/GPL-2.0), and the game assets are licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+This project is licensed under the [GPL-2.0 License]([https://opensource.org/licenses/GPL-2.0](https://www.amazon.com/404)), and the game assets are licensed under [CC-BY-SA 4.0]([https://creativecommons.org/licenses/by-sa/4.0/](https://www.amazon.com/404)).
