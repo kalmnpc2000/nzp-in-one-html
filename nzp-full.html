@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en-us">
-
 <head>
     <base href="https://rawcdn.githack.com/nzp-team/nzp-team.github.io/main/">
     <meta charset="utf-8">
@@ -16,20 +15,17 @@
             margin: 0;
             padding: 0;
         }
-
         .emscripten {
             padding-right: 0;
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
-
         div.emscripten {
             text-align: center;
             padding: 0;
             margin: 0;
         }
-
         canvas.emscripten {
             border: 0px none;
             width: 100%;
@@ -39,7 +35,6 @@
         }
     </style>
 </head>
-
 <body ondrop="gotdrop(event);" ondragover="event.preventDefault()">
     <div class="emscripten" id="status">Please allow/unblock our javascript to play.</div>
     <div id="dropzone" ondrop="gotdrop(event);" ondragover="event.preventDefault()" hidden>Drop Zone</div>
@@ -94,7 +89,6 @@
                 }
             ],
         };
-
         function begin() {
             if (Module.began) return;
             Module.began = true;
@@ -111,7 +105,6 @@
             }, false);
             document.head.appendChild(s);
         }
-
         function fixupfilepath(fname, path) {
             if (path != "") return path + fname;
             var ext = fname.substr(fname.lastIndexOf('.') + 1);
@@ -119,7 +112,6 @@
             if (ext == 'bsp' || ext == 'map' || ext == 'lit' || ext == 'lux') return "id1/maps/" + fname;
             return "id1/" + fname;
         }
-
         function showfiles() {
             if (Module.began) return;
             Module.setStatus('');
@@ -139,7 +131,6 @@
             nt += "</pre>(" + keys.length + " files)";
             document.getElementById('dropzone').innerHTML = nt;
         }
-
         function scanfiles(item, path) {
             if (item.isFile) {
                 item.file(function (f) {
@@ -157,7 +148,6 @@
                 });
             }
         }
-
         function gotdrop(ev) {
             ev.preventDefault();
             for (var i = 0; i < ev.dataTransfer.items.length; i++)
@@ -176,11 +166,9 @@
             }
             showfiles();
         }
-
         if (window.location.hash != "" || Object.keys(Module.files).length) begin();
         else showfiles();
     </script>
     <img src="https://hits.sh/hits.sh/nzp-team.github.io/latest/game.html/hits.svg" style="opacity:0;width:0px;">
 </body>
-
 </html>
