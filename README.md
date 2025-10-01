@@ -3,7 +3,7 @@
 This project is a modernized distribution of **Nazi Zombies Portable (NZP)**, delivered as a single HTML file for maximum simplicity.  
 Originally developed as a fan-made Quake-based port of *Call of Duty Zombies* for PSP, NZP has grown into a lightweight, fully portable experience that can now be run directly from your browser WITHOUT hosting it as a website.
 
-"i ported fortnite to the chromebooks"
+*"i ported fortnite to the chromebooks"*
 ---
 
 ## How It Works
